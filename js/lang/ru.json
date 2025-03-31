@@ -1,0 +1,27 @@
+{
+    "menuTitle": "Меню Кафе Лампочка",
+    "siteTitle": "КАФЕ ЛАМПОЧКА",
+    "navMenu": "Меню",
+    "navContacts": "Контакты",
+    "navLocation": "Локация",
+
+
+    "sectionMenu": "Меню",
+    "categoryShashlik": "Шашлык",
+    "dishPorkShashlik": "Шашлык из свинины",
+    "descPorkShashlik": "Сочный маринованный шашлык с луком и специями",
+    "pricePorkShashlik": "12000 вон",
+    
+    "categoryMain": "Главные блюда",
+    "mainDishTitle": "Блюдо",
+    "mainDishDesc": "Описание блюда",
+    "mainDishPrice": "цена вон",
+
+    "categorySalads": "Салаты",
+    "saladTitle": "Название салата",
+    "saladDesc": "Описание салата",
+    "saladPrice": "450 ₽"
+
+
+    
+  }

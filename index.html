@@ -3,144 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Меню Кафе Лампочка</title>
+  <title data-i18n="menuTitle">Меню Кафе Лампочка</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/script.js" defer></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
+
+<!-- Floating Language Switcher -->
+<div class="fixed bottom-4 right-4 z-50 flex flex-col gap-2">
+  <button 
+    onclick="setLanguage('ru')" 
+    id="lang-ru"
+    class="lang-btn w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-white/20 hover:border-[#DDB3BE] transition-all flex items-center justify-center bg-white/10 backdrop-blur text-lg shadow-md hover:scale-105 active:scale-95">
+    🇷🇺
+  </button>
+  <button 
+    onclick="setLanguage('en')" 
+    id="lang-en"
+    class="lang-btn w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-white/20 hover:border-[#DDB3BE] transition-all flex items-center justify-center bg-white/10 backdrop-blur text-lg shadow-md hover:scale-105 active:scale-95">
+    🇬🇧
+  </button>
+</div>
 <body class="bg-[#160923] text-white font-sans">
+
 
   <!-- Навигация -->
   <header class="bg-black/60 shadow-md sticky top-0 z-50 backdrop-blur-sm">
     <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-extrabold text-[#FBEEDF] tracking-wide">КАФЕ ЛАМПОЧКА</h1>
+      <h1 class="text-2xl font-extrabold text-[#FBEEDF] tracking-wide" data-i18n="siteTitle">КАФЕ ЛАМПОЧКА</h1>
       <ul class="flex gap-6 text-sm md:text-base text-[#DDB3BE] font-medium">
-        <li><a href="#menu" class="hover:underline">Меню</a></li>
-        <li><a href="#contacts" class="hover:underline">Контакты</a></li>
-        <li><a href="#map" class="hover:underline">Локация</a></li>
+        <li><a href="#menu" class="hover:underline" data-i18n="navMenu">Меню</a></li>
+        <li><a href="#contacts" class="hover:underline" data-i18n="navContacts">Контакты</a></li>
+        <li><a href="#map" class="hover:underline" data-i18n="navLocation">Локация</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Меню блюд -->
-  <section id="menu" class="py-16 bg-cover bg-center bg-no-repeat relative" style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80');">
-    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
-    <div class="relative container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-[#DDB3BE] mb-12 uppercase tracking-wide">Меню</h2>
+<!-- Меню блюд -->
+<section id="menu" class="py-16 bg-cover bg-center bg-no-repeat relative" style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80');">
+  <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+  <div class="relative container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-[#DDB3BE] mb-12 uppercase tracking-wide" data-i18n="sectionMenu">Меню</h2>
 
-      <div class="space-y-12">
-        <!-- Раздел: Шашлык -->
-        <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6">Шашлык</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Блюдо -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/stake (2).jpeg" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1">Шашлык из свинины</h4>
-                <p class="text-gray-300 mb-2">Сочный маринованный шашлык с луком и специями</p>
-                <p class="text-[#FBEEDF] font-bold">12000 вон</p>
-              </div>
+    <div class="space-y-12">
+      <!-- Раздел: Шашлык -->
+      <div>
+        <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6" data-i18n="categoryShashlik">Шашлык</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Блюдо -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+            <img src="img/stake (2).jpeg" alt="Шашлык из свинины" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="dishPorkShashlik">Шашлык из свинины</h4>
+              <p class="text-gray-300 mb-2" data-i18n="descPorkShashlik">Сочный маринованный шашлык с луком и специями</p>
+              <p class="text-[#FBEEDF] font-bold" data-i18n="pricePorkShashlik">12000 вон</p>
             </div>
-            <!-- Можно добавить другие виды шашлыка -->
-
-              </div>
           </div>
+
+
         </div>
+      </div>
 
         <!-- Другие разделы остаются без изменений -->
-        <!-- Раздел: Первые блюда -->
+        <!-- Раздел: Главные Блюда -->
         <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6">Первые блюда</h3>
+          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6" data-i18n="categoryMain">Главные блюда</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Блюда здесь -->
-
-              <!-- Блюдо -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="img/stake (3).jpeg" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1">Шашлык из свинины</h4>
-                  <p class="text-gray-300 mb-2">Сочный маринованный шашлык с луком и специями</p>
-                  <p class="text-[#FBEEDF] font-bold">15000 вон</p>
-                </div>
-              </div>
-
-          </div>
-        </div>
-
-        <!-- Раздел: Вторые блюда -->
-        <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6">Вторые блюда</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Блюда здесь -->
-
+        
             <!-- Блюдо -->
             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1">Шашлык из свинины</h4>
-                  <p class="text-gray-300 mb-2">Сочный маринованный шашлык с луком и специями</p>
-                  <p class="text-[#FBEEDF] font-bold">450 ₽</p>
-                </div>
+              <img src="img/stake (3).jpeg" alt="Блюдо" class="w-full h-48 object-cover">
+              <div class="p-5">
+                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="mainDishTitle">Блюдо</h4>
+                <p class="text-gray-300 mb-2" data-i18n="mainDishDesc">Описание блюда</p>
+                <p class="text-[#FBEEDF] font-bold" data-i18n="mainDishPrice">цена вон</p>
               </div>
-
-              <!-- Блюдо -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1">Шашлык из свинины</h4>
-                  <p class="text-gray-300 mb-2">Сочный маринованный шашлык с луком и специями</p>
-                  <p class="text-[#FBEEDF] font-bold">450 ₽</p>
-                </div>
-              </div>
-
-              <!-- Блюдо -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1">Шашлык из свинины</h4>
-                  <p class="text-gray-300 mb-2">Сочный маринованный шашлык с луком и специями</p>
-                  <p class="text-[#FBEEDF] font-bold">450 ₽</p>
-                </div>
-              </div>
+            </div>
+        
           </div>
         </div>
+
 
         <!-- Раздел: Салаты -->
         <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6">Салаты</h3>
+          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6" data-i18n="categorySalads">Салаты</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Блюда здесь -->
-             <!-- Блюдо -->
+        
+            <!-- Блюдо -->
             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1">Шашлык из свинины</h4>
-                  <p class="text-gray-300 mb-2">Сочный маринованный шашлык с луком и специями</p>
-                  <p class="text-[#FBEEDF] font-bold">450 ₽</p>
-                </div>
+              <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Салат" class="w-full h-48 object-cover">
+              <div class="p-5">
+                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle">Название салата</h4>
+                <p class="text-gray-300 mb-2" data-i18n="saladDesc">Описание салата</p>
+                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice">450 ₽</p>
               </div>
-              <!-- Блюдо -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1">Шашлык из свинины</h4>
-                  <p class="text-gray-300 mb-2">Сочный маринованный шашлык с луком и специями</p>
-                  <p class="text-[#FBEEDF] font-bold">450 ₽</p>
-                </div>
-              </div>
-              <!-- Блюдо -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1">Шашлык из свинины</h4>
-                  <p class="text-gray-300 mb-2">Сочный маринованный шашлык с луком и специями</p>
-                  <p class="text-[#FBEEDF] font-bold">450 ₽</p>
-                </div>
-              </div>
+            </div>
+        
           </div>
         </div>
 
@@ -149,6 +111,14 @@
           <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6">К пиву</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Блюда здесь -->
+            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+              <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Салат" class="w-full h-48 object-cover">
+              <div class="p-5">
+                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle">Название салата</h4>
+                <p class="text-gray-300 mb-2" data-i18n="saladDesc">Описание салата</p>
+                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice">450 ₽</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -157,6 +127,14 @@
           <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6">Напитки</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Блюда здесь -->
+            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+              <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Салат" class="w-full h-48 object-cover">
+              <div class="p-5">
+                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle">Название салата</h4>
+                <p class="text-gray-300 mb-2" data-i18n="saladDesc">Описание салата</p>
+                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice">450 ₽</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -167,11 +145,10 @@
   <section id="contacts" class="py-16 bg-[#DDF1FC]/10 backdrop-blur-sm">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-[#FBEEDF] mb-6 uppercase tracking-wide">Контакты</h2>
-      <p class="mb-4 text-gray-300">г. Ульсан</p>
+      <p class="mb-4 text-gray-300">울산 동구 꽃바위로 172 </p>
       <p class="mb-4 text-gray-300">Телефон: <a href="tel:01076410304" class="text-[#DDB3BE] underline">010 - 7641 - 0304</a></p>
       <div class="flex justify-center gap-4 mb-4 flex-wrap">
         <a href="https://t.me/01076410304" target="_blank" class="bg-[#DDB3BE] text-white px-6 py-2 rounded-full shadow-md hover:opacity-90">Telegram</a>
-        <a href="https://wa.me/01076410304" target="_blank" class="bg-[#DDB3BE] text-white px-6 py-2 rounded-full shadow-md hover:opacity-90">WhatsApp</a>
         <a href="tel:01076410304" class="bg-green-600 text-white px-6 py-2 rounded-full shadow-md hover:opacity-90">Позвонить</a>
       </div>
     </div>
@@ -180,7 +157,7 @@
   <!-- Карта -->
   <section id="map" class="h-96 bg-black/20 backdrop-blur-sm">
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0191919842966!2d-122.41941548468136!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c6f1a527f%3A0x9a445c62a6f278d4!2z0J_QvtC70YLQtdGA0LzQuNGH0LAg0J_RgNC-0LvQsCDQkNC70L7QtNC10L3QvdGP!5e0!3m2!1sru!2sru!4v1700000000000!5m2!1sru!2sru" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d683.0379359857842!2d129.4105306210684!3d35.47721076649904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3567d1f303828deb%3A0xf78b5b5bb6db8dc!2z7Jq47IKw6rSR7Jet7IucIOuPmeq1rCDqvYPrsJTsnITroZwgMTcy!5e0!3m2!1sko!2skr!4v1743429501906!5m2!1sko!2skr"
       width="100%" 
       height="100%" 
       style="border:0;" 

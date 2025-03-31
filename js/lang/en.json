@@ -1,0 +1,24 @@
+{
+    "menuTitle": "Café Lampochka",
+    "siteTitle": "LAMPOCHKA",
+    "navMenu": "Menu",
+    "navContacts": "Contacts",
+    "navLocation": "Location",
+  
+    "sectionMenu": "MENU 메뉴",
+    "categoryShashlik": "Barbeque/ 꼬치",
+    "dishPorkShashlik": "Pork Barbeque/ 돼지꼬치",
+    "descPorkShashlik": "Juicy marinated pork with onion and spices",
+    "pricePorkShashlik": "₩12000",
+   
+   
+    "categoryMain": "Main Dishes/ 메인코스",
+    "mainDishTitle": "Dish",
+    "mainDishDesc": "Dish description",
+    "mainDishPrice": "₩price",
+  
+    "categorySalads": "Salads/ 샐러드",
+    "saladTitle": "Salad name",
+    "saladDesc": "Salad description",
+    "saladPrice": "₩450"
+  }
