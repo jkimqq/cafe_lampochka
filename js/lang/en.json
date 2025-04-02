@@ -6,18 +6,33 @@
     "navLocation": "Location",
   
     "sectionMenu": "MENU 메뉴",
-    "categoryShashlik": "Barbeque/ 꼬치",
+    "categoryShashlik": "Barbeque / 꼬치",
     "dishPorkShashlik": "Pork Barbeque/ 돼지꼬치",
     "descPorkShashlik": "Juicy marinated pork with onion and spices",
     "pricePorkShashlik": "₩12000",
    
    
-    "categoryMain": "Main Dishes/ 메인코스",
-    "mainDishTitle": "Dish",
-    "mainDishDesc": "Dish description",
-    "mainDishPrice": "₩price",
+    "categoryMain": "First Dishes / 국,찜,찌개",
+
+    "mainDishTitle_1": "Borscht/ 보르시",
+    "mainDishDesc_1": "Aromatic beet soup in rich beef broth with meat, cabbage and vegetables. Served with sour cream. 비트수프: 고기, 배추, 야채.",
+    "mainDishPrice_1": "₩10000",
+
   
-    "categorySalads": "Salads/ 샐러드",
+    "mainDishTitle_2": "Kuksi / 쿡시",
+    "mainDishDesc_2": "A refreshing cold dish made of beef and vegetables in a spicy sweet-and-sour sauce with aromatic spices. Served chilled.  \n차가운 국수: 소고기, 야채, 매콤달콤한 소스.",
+    "mainDishPrice_2": "₩10000",
+
+    "mainDishTitle_3": "Tom Yum / 똠얌",
+    "mainDishDesc_3": "Spicy Thai soup with seafood, lemongrass, galangal, chili and lime. Served with rice.\n매콤한 태국식 수프: 해산물, 레몬그라스, 갈랑가, 고추, 라임. 공기밥 제공됨.",
+    "mainDishPrice_3": "₩13000"
+,
+
+    "mainDishTitle_4": "Lagman / 라그만",
+    "mainDishDesc_4": "Hearty soup in rich beef broth with beef, vegetables, celery, spices and noodles. Served with a spicy seasoning.\n 누들 소고기 수프: 소고기, 채소, 셀러리, 향신료. 매운 소스와 함께 제공됨.",
+    "mainDishPrice_4": "₩10000",
+  
+    "categorySalads": "Salads / 샐러드",
     "saladTitle": "Salad name",
     "saladDesc": "Salad description",
     "saladPrice": "₩450"
