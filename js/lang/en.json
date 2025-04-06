@@ -154,7 +154,7 @@
     "saladPrice_10": "₩13000",
 
 
-    "categoryToGo": "Takeout",
+    "categoryToGo": "Takeout / 포장",
 
     "dishToGo_1": "Homemade Dumplings (Beef) / 수제 소고기 만두",
     "descToGo_1": "Handmade dumplings filled with juicy beef and spices. Sold by weight (1kg).\n육즙 가득한 소고기와 향신료로 속을 채운 수제 만두. 1kg 단위로 판매됨.",
@@ -181,21 +181,21 @@
     "drink_2": "Sprite",
     "drink_3": "Green Tea with Lemon / 레몬 녹차",
     "drink_4": "Black Tea with Lemon / 레몬 홍차",
-    "drink_5": "Compote (1L) / 콤포트 1리터",
-    "drink_6": "Lemonade (1L) / 레모네이드 1리터",
+    "drink_5": "Compote (1L) / 콤포트",
+    "drink_6": "Lemonade (1L) / 레모네이드",
 
     "alcoholic": "Alcoholic Drinks / 주류",
-    "drink_7": "Sangria Wine (0.2L) / 상그리아 와인 (0.2L)",
-    "drink_8": "Alazani Valley (0.5L) / 알라자니 밸리 (0.5L)",
-    "drink_9": "Vodka Absolut (0.7L) / 앱솔루트 보드카 (0.7L)",
-    "drink_10": "Whiskey Jack Daniel’s (0.7L) / 잭다니엘 위스키 (0.7L)",
-    "drink_11": "Whiskey Jameson (50ml) / 제임슨 위스키 (50ml)",
+    "drink_7": "Sangria Wine (0.2L) / 상그리아 와인",
+    "drink_8": "Alazani Valley (0.5L) / 알라자니 밸리",
+    "drink_9": "Vodka Absolut (0.7L) / 앱솔루트 보드카",
+    "drink_10": "Whiskey Jack Daniel’s (0.7L) / 잭다니엘 위스키",
+    "drink_11": "Whiskey Jameson (50ml) / 제임슨 위스키",
     "drink_12": "Soju / 소주",
     "drink_13": "Beer / 맥주",
-    "drink_14": "Vodka 'Ugolnaya' (0.5L) / 우골나야 보드카 (0.5L)",
-    "drink_15": "Vodka 'Khortytsa' (0.5L) / 호르티차 보드카 (0.5L)",
-    "drink_16": "Vodka 'Kislorod' (0.5L) / 키슬로로드 보드카 (0.5L)",
-    "drink_17": "Vodka 'Russkaya' (0.5L) / 루스카야 보드카 (0.5L)",
+    "drink_14": "Vodka 'Ugolnaya' (0.5L) / 우골나야 보드카",
+    "drink_15": "Vodka 'Khortytsa' (0.5L) / 호르티차 보드카",
+    "drink_16": "Vodka 'Kislorod' (0.5L) / 키슬로로드 보드카",
+    "drink_17": "Vodka 'Russkaya' (0.5L) / 루스카야 보드카",
 
     "categoryBeerSnacks": "Beer Snacks / 맥주 안주",
     "beerSnack_1": "Smoked Braided Cheese / 꼬임 치즈",
@@ -206,7 +206,7 @@
 
 
     "contacts": "Contacts",
-    "address": "ADDRESS: 172, Kkotbawi-ro, Dong-gu, Ulsan \n울산 동구 꽃바위로 172",
+    "address": "ADDRESS: 울산 동구 꽃바위로 172",
     "phoneLabel": "PHONE:",
     "telegram": "Telegram",
     "call": "Call",

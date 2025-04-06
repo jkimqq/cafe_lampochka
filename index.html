@@ -73,28 +73,33 @@
 
 
 <!-- Меню блюд -->
+
+<!-- Меню блюд -->
 <section id="menu" class="py-16 bg-cover bg-center bg-no-repeat relative" style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80');">
   <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
   <div class="relative container mx-auto px-4">
     <h2 class="text-4xl font-bold text-center text-[#DDB3BE] mb-12 uppercase tracking-wide" data-i18n="sectionMenu">Меню</h2>
 
-   <div class="space-y-12">
+    <div class="space-y-6">
       <!-- Раздел: Шашлык -->
-      <div>
-        <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6" data-i18n="categoryShashlik">Шашлык</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          <!-- Блюдо 1 -->
-          <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-            <img src="img/svinina_shashlyk.jpg" alt="Шашлык из свинины" class="w-full h-48 object-cover">
-            <div class="p-5">
-              <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="dishShashlik_1">Шашлык из свинины</h4>
-              <p class="text-gray-300 mb-2" data-i18n="descShashlik_1">Сочные кусочки свинины, маринованные в специях и запечённые на углях до румяной корочки. Подаётся с луком и томатным соусом для шашлыка.</p>
-              <p class="text-[#FBEEDF] font-bold" data-i18n="priceShashlik_1">7000 вон</p>
+      <details open class="bg-white/5 rounded-xl shadow-md overflow-hidden">
+        <summary class="cursor-pointer px-6 py-4 text-2xl font-bold text-[#FBEEDF] select-none hover:bg-white/10 transition-all" data-i18n="categoryShashlik">
+          Шашлык
+        </summary>
+        <div class="px-6 pb-6 pt-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+            <!-- Блюдо 1 -->
+            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+              <img src="img/svinina_shashlyk.jpg" alt="Шашлык из свинины" class="w-full h-48 object-cover">
+              <div class="p-5">
+                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="dishShashlik_1">Шашлык из свинины</h4>
+                <p class="text-gray-300 mb-2" data-i18n="descShashlik_1">Сочные кусочки свинины, маринованные в специях и запечённые на углях до румяной корочки. Подаётся с луком и томатным соусом для шашлыка.</p>
+                <p class="text-[#FBEEDF] font-bold" data-i18n="priceShashlik_1">7000 вон</p>
+              </div>
             </div>
-          </div>
 
-          <!-- Блюдо 2-->
+
+            <!-- Блюдо 2-->
           <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
             <img src="img/baranina_shashlyk.jpg" alt="Шашлык из свинины" class="w-full h-48 object-cover">
             <div class="p-5">
@@ -104,8 +109,8 @@
             </div>
           </div>
 
-           <!-- Блюдо 3-->
-           <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+          <!-- Блюдо 3-->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
             <!-- <img src="img/baranina_shashlyk.jpg" alt="Шашлык из свинины" class="w-full h-48 object-cover"> -->
             <div class="p-5">
               <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="dishShashlik_3">Шашлык из курицы</h4>
@@ -144,28 +149,30 @@
             </div>
           </div>
 
+            <!-- Добавь другие блюда сюда -->
 
+          </div>
         </div>
-      </div> 
+      </details>
 
-      <div class="space-y-12"></div>
-        <!-- Раздел: Главные Блюда -->
-        <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6" data-i18n="categoryMain">Первые блюда</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-            
-            <!-- Блюдо 0 -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/solyanka.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="mainDishTitle_0">Солянка</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="mainDishDesc_0">Насыщенный суп на наваристом говяжьем бульоне с копчёностями, маринованными огурцами, маслинами и лимоном. Подаётся со сметаной..</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="mainDishPrice_0">10000 вон</p>
-              </div>
-            </div>
-            
-            
+      <!-- Раздел: Первые блюда -->
+<details open class="bg-white/5 rounded-xl shadow-md overflow-hidden">
+  <summary class="cursor-pointer px-6 py-4 text-2xl font-bold text-[#FBEEDF] select-none hover:bg-white/10 transition-all" data-i18n="categoryMain">
+    Первые блюда
+  </summary>
+  <div class="px-6 pb-6 pt-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+
+      <!-- Блюдо 0 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/solyanka.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="mainDishTitle_0">Солянка</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="mainDishDesc_0">Насыщенный суп на наваристом говяжьем бульоне с копчёностями, маринованными огурцами, маслинами и лимоном. Подаётся со сметаной.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="mainDishPrice_0">10000 вон</p>
+        </div>
+      </div>
+
             <!-- Блюдо 1 -->
             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
               <img src="img/borsh.jpg" alt="Блюдо" class="w-full h-48 object-cover">
@@ -208,281 +215,297 @@
                 <p class="text-[#FBEEDF] font-bold" data-i18n="mainDishPrice_4">10000 вон</p>
               </div>
             </div>
+      <!-- Добавь остальные блюда здесь -->
+
+    </div>
+  </div>
+</details>
+
+<!-- Раздел: Вторые блюда -->
+<details open class="bg-white/5 rounded-xl shadow-md overflow-hidden">
+  <summary class="cursor-pointer px-6 py-4 text-2xl font-bold text-[#FBEEDF] select-none hover:bg-white/10 transition-all" data-i18n="categorySecondDish">
+    Вторые блюда
+  </summary>
+  <div class="px-6 pb-6 pt-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+
+      <!-- Блюдо 1 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/myaso_po_fransuzki.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_1">Мясо по-французски</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_1">
+            Запечённые в духовке кусочки свинины под слоем лука, помидоров и тёртого сыра, часто с добавлением майонеза. Можете выбрать либо пюре домашнее, либо картофельные дольки.
+          </p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_1">14000 вон</p>
+        </div>
+      </div>
+
+      <!-- Блюдо 2-->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/myaso_po_gavaiski.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_2">Мясо по-гавайски</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_2">Cвинина, запечённая с ананасами и сыром, придающими блюду сладковатый вкус и сочность. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_2">14000 вон</p>
+        </div>
+      </div>
+
+      <!-- Блюдо 3 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/svinaya_otbivnaya.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_3">Свиная отбивная </h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_3">Cочный кусок свинины, отбитый и обжаренный на сковороде или гриле до золотистой корочки. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_3">12000 вон</p>
+        </div>
+      </div>
+
+      <!-- Блюдо 4 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/okorochok.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_4">Окорочек в духовке </h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_4">Куриный окорочок, запечённый с пряностями, чесноком и травами до румяной корочки. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_4">10000 вон</p>
+        </div>
+      </div>
+
+      <!-- Блюдо 5 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/tabaka.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_5">Цыплёнок табака </h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_5">Маленький цыплёнок, прижатый прессом и обжаренный на сковороде с ароматными специями до хрустящей корочки.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_5">12000 вон</p>
+        </div>
+      </div>
+
+        <!-- Блюдо 6 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/manty.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_6">Манты (с нарезанным фаршем, говяжьи) </h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_6">Cочные пельмени, приготовленные на пару, с рубленой говядиной, луком и специями.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_6">10000 вон</p>
+        </div>
+      </div>
+
+        <!-- Блюдо 7 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/shaurma.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_7">Шаурма с курицей</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_7">Cочное куриное мясо, свежий салат айсберг, овощи, корейская морковь и фирменный чесночный соус, завернутые в мягкий лаваш.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_7">11000 вон</p>
+        </div>
+      </div>
+
+          <!-- Блюдо 8 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/doner.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_8">Донер с курицей</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_8">Ароматное куриное мясо, картофель фри, свежие овощи, солёные огурцы, корейская морковь, кетчуп и соус, завернутые в лаваш для насыщенного вкуса.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_8">11000 вон</p>
+        </div>
+      </div>
+
+          <!-- Блюдо 9 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/sosiski.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_9">Домашние сосиски (говяжьи) (3 шт)</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_9">Сочные сосиски ручной работы из рубленого говяжьего фарша, в натуральной свиной оболочке, приготовленные по традиционному рецепту. Подаются с томатным соусом.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_9">12000 вон</p>
+        </div>
+      </div>
+
+        <!-- Блюдо 10 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/sosiski.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_10">Домашние сосиски (свиные) (3шт)</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_10">Нежные свиные сосиски в натуральной оболочке, изготовленные вручную из отборного свиного фарша со специями для насыщенного вкуса. Подаются с томатным соусом.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_10">11000 вон</p>
+        </div>
+      </div>
+
+        <!-- Блюдо 11 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/sosiski.jpg" alt="Блюдо" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_11">Домашние сосиски (куриные) – (3шт)</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_11">Лёгкие и сочные сосиски из рубленого куриного мяса в натуральной свиной оболочке, с ароматными специями для мягкого вкуса. Подаются с томатным соусом.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_11">10000 вон</p>
+        </div>
+      </div>
+
+      <!-- Блюдо 12 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <!-- <img src="img/" alt="Блюдо" class="w-full h-48 object-cover"> -->
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_12">Шницель из говядины</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_12">Тонкий кусок говядины, панированный в сухарях и обжаренный до хрустящей золотистой корочки. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_12">13000 вон</p>
+        </div>
+      </div>
+
+        <!-- Блюдо 13 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <!-- <img src="img/" alt="Блюдо" class="w-full h-48 object-cover"> -->
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_13">Котлеты домашние</h4>
+          <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_13">Нежные жареные котлеты из говяжьего фарша. Подаются с домашним пюре или картофельными дольками.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_13">10000 вон</p>
+        </div>
+      </div>
+      <!-- Добавь остальные блюда здесь -->
+
+    </div>
+  </div>
+</details>
+
+
+<!-- Раздел: Салаты -->
+<details open class="bg-white/5 rounded-xl shadow-md overflow-hidden">
+  <summary class="cursor-pointer px-6 py-4 text-2xl font-bold text-[#FBEEDF] select-none hover:bg-white/10 transition-all" data-i18n="categorySalads">
+    Салаты
+  </summary>
+  <div class="px-6 pb-6 pt-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+
+      <!-- Салат 3 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/olive.jpg" alt="Салат" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_3">Оливье с колбасой</h4>
+          <p class="text-gray-300 mb-2" data-i18n="saladDesc_3">
+            Классический салат с варёной колбасой, картофелем, морковью, яйцом, зелёным горошком и солёными огурцами, заправленный майонезом.
+          </p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_3">9000 вон</p>
+        </div>
+      </div>
+
+       <!-- Салат 4-->
+       <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <!-- <img src="/img/" alt="Салат" class="w-full h-48 object-cover"> -->
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_4">Крабовый салат</h4>
+          <p class="text-gray-300 mb-2" data-i18n="saladDesc_4">Нежные крабовые палочки, сочная кукуруза, варёные яйца и рис, заправленные майонезом для мягкого и сбалансированного вкуса.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_4">9000 вон</p>
+        </div>
+      </div>
+
+    <!-- Салат 1 -->
+    <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+      <img src="img/cesar.jpg" alt="Салат" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_1">Цезарь с курицей</h4>
+        <p class="text-gray-300 mb-2" data-i18n="saladDesc_1">Классический салат с нежным куриным филе, хрустящими гренками, помидорами черри, тертым пармезаном и соусом “Цезарь”.</p>
+        <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_1">11000 вон</p>
+      </div>
+    </div>
+
+    <!-- Салат 10 -->
+    <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+      <!-- <img src="/img/cesar.jpg" alt="Салат" class="w-full h-48 object-cover"> -->
+      <div class="p-5">
+        <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_10">Цезарь с креветками</h4>
+        <p class="text-gray-300 mb-2" data-i18n="saladDesc_10">Свежие листья салата, сочные креветки, хрустящие гренки, помидоры черри и тертый пармезан, заправленные фирменным соусом.</p>
+        <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_10">13000 вон</p>
+      </div>
+    </div>
+
+      <!-- Салат 9-->
+       <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <!-- <img src="/img/" alt="Салат" class="w-full h-48 object-cover"> -->
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_9">Рукола с креветками</h4>
+          <p class="text-gray-300 mb-2" data-i18n="saladDesc_9">Ароматная рукола с сочными креветками, пармезаном, моцареллой и ломтиками миндаля, заправленная легким соусом.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_9">9000 вон</p>
+        </div>
+      </div>
+
+       <!-- Салат 2-->
+    <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+      <img src="img/greek salad.jpg" alt="Салат" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_2">Греческий салат</h4>
+        <p class="text-gray-300 mb-2" data-i18n="saladDesc_2">Свежие помидоры, огурцы, сладкий перец, маслины, сочная фета и оливковое масло. Подаётся без лука.</p>
+        <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_2">10000 вон</p>
+      </div>
+    </div>
+
+
+          <!-- Салат 8-->
+    <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/hrustyashie_baklazhany.jpg" alt="Салат" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_8">Салат с хрустящими баклажанами </h4>
+          <p class="text-gray-300 mb-2" data-i18n="saladDesc_8">/Обжаренные баклажаны с нежным сыром “Филадельфия”, сочными помидорами и ароматной кинзой, заправленные лёгким соусом</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_8">11000 вон</p>
+        </div>
+    </div>
+
         
+       <!-- Салат 5-->
+       <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <!-- <img src="/img/" alt="Салат" class="w-full h-48 object-cover"> -->
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_5">Хе из пупков</h4>
+          <p class="text-gray-300 mb-2" data-i18n="saladDesc_5">Пряное корейское блюдо из куриных желудков, маринованных в уксусе, чесноке и специях, с острой морковью.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_5">9000 вон</p>
+        </div>
+      </div>
+
+         <!-- Салат 6-->
+       <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <!-- <img src="/img/" alt="Салат" class="w-full h-48 object-cover"> -->
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_6">Хе из требухи</h4>
+          <p class="text-gray-300 mb-2" data-i18n="saladDesc_6">/Острое и пикантное блюдо из говяжьей требухи, маринованной в уксусе, специях и чесноке, с добавлением овощей.</p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_6">10000 вон</p>
+        </div>
+      </div>
+
+
+         <!-- Салат 7-->
+         <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+          <img src="img/beef_he.jpg" alt="Салат" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_7">Хе из говяжьего мяса</h4>
+            <p class="text-gray-300 mb-2" data-i18n="saladDesc_7">/Нежные кусочки говядины, маринованные в уксусе, чесноке и специях, с пикантной морковью и зеленью.</p>
+            <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_7">10000 вон</p>
           </div>
         </div>
 
+      <!-- Добавь другие салаты сюда -->
 
-        <div class="space-y-12"></div>
+    </div>
+  </div>
+</details>
 
-        <!-- Раздел: Вторые Блюда -->
-        <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6" data-i18n="categorySecondDish">Вторые блюда</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-            <!-- Блюдо 1 -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/myaso_po_fransuzki.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_1">Мясо по-французски</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_1">Запечённые в духовке кусочки свинины под слоем лука, помидоров и тёртого сыра, часто с добавлением майонеза. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_1">14000 вон</p>
-              </div>
-            </div>
+<!-- Раздел: На вынос -->
+<details open class="bg-white/5 rounded-xl shadow-md overflow-hidden">
+  <summary class="cursor-pointer px-6 py-4 text-2xl font-bold text-[#FBEEDF] select-none hover:bg-white/10 transition-all" data-i18n="categoryToGo">
+    На вынос
+  </summary>
+  <div class="px-6 pb-6 pt-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
 
-             <!-- Блюдо 2-->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/myaso_po_gavaiski.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_2">Мясо по-гавайски</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_2">Cвинина, запечённая с ананасами и сыром, придающими блюду сладковатый вкус и сочность. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_2">14000 вон</p>
-              </div>
-            </div>
-
-             <!-- Блюдо 3 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/svinaya_otbivnaya.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_3">Свиная отбивная </h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_3">Cочный кусок свинины, отбитый и обжаренный на сковороде или гриле до золотистой корочки. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_3">12000 вон</p>
-              </div>
-            </div>
-
-             <!-- Блюдо 4 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/okorochok.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_4">Окорочек в духовке </h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_4">Куриный окорочок, запечённый с пряностями, чесноком и травами до румяной корочки. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_4">10000 вон</p>
-              </div>
-            </div>
-
-             <!-- Блюдо 5 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/tabaka.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_5">Цыплёнок табака </h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_5">Маленький цыплёнок, прижатый прессом и обжаренный на сковороде с ароматными специями до хрустящей корочки.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_5">12000 вон</p>
-              </div>
-            </div>
-
-              <!-- Блюдо 6 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/manty.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_6">Манты (с нарезанным фаршем, говяжьи) </h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_6">Cочные пельмени, приготовленные на пару, с рубленой говядиной, луком и специями.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_6">10000 вон</p>
-              </div>
-            </div>
-
-              <!-- Блюдо 7 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/shaurma.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_7">Шаурма с курицей</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_7">Cочное куриное мясо, свежий салат айсберг, овощи, корейская морковь и фирменный чесночный соус, завернутые в мягкий лаваш.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_7">11000 вон</p>
-              </div>
-            </div>
-
-                <!-- Блюдо 8 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/doner.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_8">Донер с курицей</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_8">Ароматное куриное мясо, картофель фри, свежие овощи, солёные огурцы, корейская морковь, кетчуп и соус, завернутые в лаваш для насыщенного вкуса.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_8">11000 вон</p>
-              </div>
-            </div>
-
-                <!-- Блюдо 9 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/sosiski.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_9">Домашние сосиски (говяжьи) (3 шт)</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_9">Сочные сосиски ручной работы из рубленого говяжьего фарша, в натуральной свиной оболочке, приготовленные по традиционному рецепту. Подаются с томатным соусом.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_9">12000 вон</p>
-              </div>
-            </div>
-
-              <!-- Блюдо 10 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/sosiski.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_10">Домашние сосиски (свиные) (3шт)</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_10">Нежные свиные сосиски в натуральной оболочке, изготовленные вручную из отборного свиного фарша со специями для насыщенного вкуса. Подаются с томатным соусом.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_10">11000 вон</p>
-              </div>
-            </div>
-
-              <!-- Блюдо 11 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/sosiski.jpg" alt="Блюдо" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_11">Домашние сосиски (куриные) – (3шт)</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_11">Лёгкие и сочные сосиски из рубленого куриного мяса в натуральной свиной оболочке, с ароматными специями для мягкого вкуса. Подаются с томатным соусом.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_11">10000 вон</p>
-              </div>
-            </div>
-
-             <!-- Блюдо 12 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <!-- <img src="img/" alt="Блюдо" class="w-full h-48 object-cover"> -->
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_12">Шницель из говядины</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_12">Тонкий кусок говядины, панированный в сухарях и обжаренный до хрустящей золотистой корочки. Можете выбрать либо пюре домашнее, либо картофельные дольки.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_12">13000 вон</p>
-              </div>
-            </div>
-
-              <!-- Блюдо 13 -->
-             <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <!-- <img src="img/" alt="Блюдо" class="w-full h-48 object-cover"> -->
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="secondDishTitle_13">Котлеты домашние</h4>
-                <p class="whitespace-pre-line text-gray-300 mb-2" data-i18n="secondDishDesc_13">Нежные жареные котлеты из говяжьего фарша. Подаются с домашним пюре или картофельными дольками.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="secondDishPrice_13">10000 вон</p>
-              </div>
-            </div>
-
-          </div>
+      <!-- Блюдо 1 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
+        <img src="img/Pelmeny.jpg" alt="ToGo" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="dishToGo_1">Пельмени домашние (из говяжьего фарша)</h4>
+          <p class="text-gray-300 mb-2" data-i18n="descToGo_1">
+            Пельмени ручной лепки с сочной начинкой из говядины и специй. Продаются на развес (1кг).
+          </p>
+          <p class="text-[#FBEEDF] font-bold" data-i18n="priceToGo_1">15000 вон</p>
         </div>
+      </div>
 
-        <div class="space-y-12">
-        <!-- Раздел: Салаты -->
-        <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6" data-i18n="categorySalads">Салаты</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-
-               <!-- Салат 3-->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/olive.jpg" alt="Салат" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_3">Оливье с колбасой</h4>
-                <p class="text-gray-300 mb-2" data-i18n="saladDesc_3">Классический салат с варёной колбасой, картофелем, морковью, яйцом, зелёным горошком и солёными огурцами, заправленный майонезом.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_3">9000 вон</p>
-              </div>
-            </div>
-            
-              <!-- Салат 4-->
-              <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <!-- <img src="/img/" alt="Салат" class="w-full h-48 object-cover"> -->
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_4">Крабовый салат</h4>
-                  <p class="text-gray-300 mb-2" data-i18n="saladDesc_4">Нежные крабовые палочки, сочная кукуруза, варёные яйца и рис, заправленные майонезом для мягкого и сбалансированного вкуса.</p>
-                  <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_4">9000 вон</p>
-                </div>
-              </div>
-        
-            <!-- Салат 1 -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/cesar.jpg" alt="Салат" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_1">Цезарь с курицей</h4>
-                <p class="text-gray-300 mb-2" data-i18n="saladDesc_1">Классический салат с нежным куриным филе, хрустящими гренками, помидорами черри, тертым пармезаном и соусом “Цезарь”.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_1">11000 вон</p>
-              </div>
-            </div>
-
-            <!-- Салат 10 -->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <!-- <img src="/img/cesar.jpg" alt="Салат" class="w-full h-48 object-cover"> -->
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_10">Цезарь с креветками</h4>
-                <p class="text-gray-300 mb-2" data-i18n="saladDesc_10">Свежие листья салата, сочные креветки, хрустящие гренки, помидоры черри и тертый пармезан, заправленные фирменным соусом.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_10">13000 вон</p>
-              </div>
-            </div>
-
-              <!-- Салат 9-->
-               <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <!-- <img src="/img/" alt="Салат" class="w-full h-48 object-cover"> -->
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_9">Рукола с креветками</h4>
-                  <p class="text-gray-300 mb-2" data-i18n="saladDesc_9">Ароматная рукола с сочными креветками, пармезаном, моцареллой и ломтиками миндаля, заправленная легким соусом.</p>
-                  <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_9">9000 вон</p>
-                </div>
-              </div>
-
-               <!-- Салат 2-->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="img/greek salad.jpg" alt="Салат" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_2">Греческий салат</h4>
-                <p class="text-gray-300 mb-2" data-i18n="saladDesc_2">Свежие помидоры, огурцы, сладкий перец, маслины, сочная фета и оливковое масло. Подаётся без лука.</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_2">10000 вон</p>
-              </div>
-            </div>
-
-
-                  <!-- Салат 8-->
-            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="img/hrustyashie_baklazhany.jpg" alt="Салат" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_8">Салат с хрустящими баклажанами </h4>
-                  <p class="text-gray-300 mb-2" data-i18n="saladDesc_8">/Обжаренные баклажаны с нежным сыром “Филадельфия”, сочными помидорами и ароматной кинзой, заправленные лёгким соусом</p>
-                  <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_8">11000 вон</p>
-                </div>
-            </div>
-
-                
-               <!-- Салат 5-->
-               <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <!-- <img src="/img/" alt="Салат" class="w-full h-48 object-cover"> -->
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_5">Хе из пупков</h4>
-                  <p class="text-gray-300 mb-2" data-i18n="saladDesc_5">Пряное корейское блюдо из куриных желудков, маринованных в уксусе, чесноке и специях, с острой морковью.</p>
-                  <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_5">9000 вон</p>
-                </div>
-              </div>
-
-                 <!-- Салат 6-->
-               <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <!-- <img src="/img/" alt="Салат" class="w-full h-48 object-cover"> -->
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_6">Хе из требухи</h4>
-                  <p class="text-gray-300 mb-2" data-i18n="saladDesc_6">/Острое и пикантное блюдо из говяжьей требухи, маринованной в уксусе, специях и чесноке, с добавлением овощей.</p>
-                  <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_6">10000 вон</p>
-                </div>
-              </div>
-
-
-                 <!-- Салат 7-->
-                 <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                  <img src="img/beef_he.jpg" alt="Салат" class="w-full h-48 object-cover">
-                  <div class="p-5">
-                    <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle_7">Хе из говяжьего мяса</h4>
-                    <p class="text-gray-300 mb-2" data-i18n="saladDesc_7">/Нежные кусочки говядины, маринованные в уксусе, чесноке и специях, с пикантной морковью и зеленью.</p>
-                    <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice_7">10000 вон</p>
-                  </div>
-                </div>
-              
-        
-          </div>
-        </div>
-
-
-        <div class="space-y-12">
-          <!-- Раздел: На вынос -->
-          <div>
-            <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6" data-i18n="categoryToGo">На вынос</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    
-              <!-- Блюдо 1 -->
-              <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-                <img src="img/Pelmeny.jpg" alt="ToGo" class="w-full h-48 object-cover">
-                <div class="p-5">
-                  <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="dishToGo_1">Пельмени домашние (из говяжьего фарша)</h4>
-                  <p class="text-gray-300 mb-2" data-i18n="descToGo_1">Пельмени ручной лепки с сочной начинкой из говядины и специй. Продаются на развес (1кг).</p>
-                  <p class="text-[#FBEEDF] font-bold" data-i18n="priceToGo_1">15000 вон</p>
-                </div>
-              </div>
 
               <!-- Блюдо 2 -->
               <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
@@ -514,50 +537,20 @@
                 </div>
               </div>
 
-            </div>
-          </div>
+      <!-- Добавь остальные блюда "На вынос" сюда -->
 
-
-
-
-
-          
-        <!-- Раздел: К пиву
-        <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6">К пиву</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-             Блюда здесь -->
-            <!-- <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Салат" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle">Название салата</h4>
-                <p class="text-gray-300 mb-2" data-i18n="saladDesc">Описание салата</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice">450 ₽</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Раздел: Напитки -->
-        <!-- <div>
-          <h3 class="text-2xl font-bold text-[#FBEEDF] mb-6">Напитки</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> -->
-            <!-- Блюда здесь -->
-            <!-- <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg">
-              <img src="https://images.unsplash.com/photo-1604908812962-df9e7db9a8ae?auto=format&fit=crop&w=600&q=80" alt="Салат" class="w-full h-48 object-cover">
-              <div class="p-5">
-                <h4 class="text-lg font-semibold text-[#FBEEDF] mb-1" data-i18n="saladTitle">Название салата</h4>
-                <p class="text-gray-300 mb-2" data-i18n="saladDesc">Описание салата</p>
-                <p class="text-[#FBEEDF] font-bold" data-i18n="saladPrice">450 ₽</p>
-              </div>
-            </div>
-          </div>
-        </div> 
-      </div> -->
     </div>
   </div>
-</div>
-  </section>
+</details>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
 
 
 <!-- Раздел: Напитки -->
@@ -646,7 +639,7 @@
 
 <!-- Футер -->
 <footer class="bg-black/60 text-center text-sm py-4 text-gray-400 backdrop-blur-sm">
-  <span data-i18n="footer">&copy; 2025 КАФЕ ЛАМПОЧКА. Все права защищены.</span>
+  <span data-i18n="footer">&copy; 2025 CAFE LAMPOCHKA. Все права защищены.</span>
 </footer>
 
 
