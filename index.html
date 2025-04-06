@@ -553,73 +553,87 @@
 <!-- Раздел: Напитки -->
 <section id="drinks" class="py-16 bg-cover bg-center bg-no-repeat relative" style="background-image: url('/img/drinks-bg.jpg');">
   <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
-  <div class="relative container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center text-[#DDB3BE] mb-12 uppercase tracking-wide" data-i18n="categoryDrinks">Напитки</h2>
+  <div class="relative container mx-auto px-4 max-w-4xl">
+    <div class="border border-[#DDB3BE]/40 rounded-2xl p-6 sm:p-10 bg-white/5 backdrop-blur-md shadow-xl shadow-black/20">
+      <h2 class="text-4xl font-bold text-center text-[#DDB3BE] mb-12 uppercase tracking-wide" data-i18n="categoryDrinks">Напитки</h2>
 
+      <!-- Безалкогольные напитки -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-[#FBEEDF] mb-4 border-b border-[#DDB3BE]/30 pb-2" data-i18n="nonAlcoholic">Безалкогольные напитки</h3>
+        <ul class="divide-y divide-white/10">
+          <li class="flex justify-between py-2"><span data-i18n="drink_1">Pepsi</span><span class="font-semibold text-[#FBEEDF]">4 500₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_2">Sprite</span><span class="font-semibold text-[#FBEEDF]">4 500₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drinkStill">Напитки без газа</span><span class="font-semibold text-[#FBEEDF]">5 000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_3">Чай зелёный с лимоном</span><span class="font-semibold text-[#FBEEDF]">4 000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_4">Чай чёрный с лимоном</span><span class="font-semibold text-[#FBEEDF]">4 000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_5">Компот (1 л)</span><span class="font-semibold text-[#FBEEDF]">4 000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_6">Лимонад (1 л)</span><span class="font-semibold text-[#FBEEDF]">9 000₩</span></li>
+        </ul>
+      </div>
 
-  <!-- Безалкогольные напитки -->
-  <h3 class="text-2xl font-bold text-[#FBEEDF] mb-4" data-i18n="nonAlcoholic">Безалкогольные напитки</h3>
-  <div class="grid gap-2 mb-8">
-    <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_1">Pepsi</span><span class="font-semibold">4 500 ₩</span></div>
-    <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_2">Sprite</span><span class="font-semibold">4 500 ₩</span></div>
-    <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drinkStill">Напитки без газа</span><span class="font-semibold">5 000 ₩</span></div>
-    <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_3">Чай зелёный с лимоном</span><span class="font-semibold">4 000 ₩</span></div>
-    <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_4">Чай чёрный с лимоном</span><span class="font-semibold">4 000 ₩</span></div>
-    <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_5">Компот (1 л)</span><span class="font-semibold">4 000 ₩</span></div>
-    <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_6">Лимонад (1 л)</span><span class="font-semibold">9 000 ₩</span></div>
-  </div>
+      <!-- Алкогольные напитки -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-[#FBEEDF] mb-4 border-b border-[#DDB3BE]/30 pb-2" data-i18n="alcoholic">Алкогольные напитки</h3>
+        <ul class="divide-y divide-white/10">
+          <li class="flex justify-between py-2"><span data-i18n="drink_7">Вино Sangria (0.2 л)</span><span class="font-semibold text-[#FBEEDF]">2 000 ₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_8">Алазанская Долина (0.5 л)</span><span class="font-semibold text-[#FBEEDF]">25 000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_9">Водка Absolut (0.7 л)</span><span class="font-semibold text-[#FBEEDF]">45 000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_10">Виски Jack Daniel’s (0.7 л)</span><span class="font-semibold text-[#FBEEDF]">65000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_11">Виски Jameson (50 мл)</span><span class="font-semibold text-[#FBEEDF]">3 500 ₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_12">Соджу</span><span class="font-semibold text-[#FBEEDF]">4 000 ₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_13">Пиво</span><span class="font-semibold text-[#FBEEDF]">4 000 ₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_14">Водка “Угольная” (0.5 л)</span><span class="font-semibold text-[#FBEEDF]">16500₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_15">Водка “Хортица” (0.5 л)</span><span class="font-semibold text-[#FBEEDF]">17000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_16">Водка “Кислород” (0.5 л)</span><span class="font-semibold text-[#FBEEDF]">15000₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="drink_17">Водка “Русская” (0.5 л)</span><span class="font-semibold text-[#FBEEDF]">15000₩</span></li>
+        </ul>
+      </div>
 
+      <!-- К пиву -->
+      <div>
+        <h3 class="text-2xl font-semibold text-[#FBEEDF] mb-4 border-b border-[#DDB3BE]/30 pb-2" data-i18n="categoryBeerSnacks">К пиву</h3>
+        <ul class="divide-y divide-white/10">
+          <li class="flex justify-between py-2"><span data-i18n="beerSnack_1">Сыр «Косичка»</span><span class="font-semibold text-[#FBEEDF]">10 000 ₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="beerSnack_2">Бастурма</span><span class="font-semibold text-[#FBEEDF]">7 000 ₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="beerSnack_3">Орешки</span><span class="font-semibold text-[#FBEEDF]">3 000 ₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="beerSnack_4">Чипсы</span><span class="font-semibold text-[#FBEEDF]">4 000 ₩</span></li>
+          <li class="flex justify-between py-2"><span data-i18n="beerSnack_5">Сухарики</span><span class="font-semibold text-[#FBEEDF]">2 500 ₩</span></li>
+        </ul>
+      </div>
 
-
-    <!-- Алкогольные напитки -->
-    <h3 class="text-2xl font-bold text-[#FBEEDF] mb-4" data-i18n="alcoholic">Алкогольные напитки</h3>
-    <div class="grid gap-2">
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_7">Вино Sangria (0.2 л)</span><span class="font-semibold">2 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_8">Алазанская Долина (0.5 л)</span><span class="font-semibold">25 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_9">Водка Absolut (0.7 л)</span><span class="font-semibold">45 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_10">Виски Jack Daniel’s (0.7 л)</span><span class="font-semibold">65 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_11">Виски Jameson (50 мл)</span><span class="font-semibold">3 500 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_12">Соджу</span><span class="font-semibold">4 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_13">Пиво</span><span class="font-semibold">4 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_14">Водка “Угольная” (0.5 л)</span><span class="font-semibold">16 500 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_15">Водка “Хортица” (0.5 л)</span><span class="font-semibold">17 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_16">Водка “Кислород” (0.5 л)</span><span class="font-semibold">15 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="drink_17">Водка “Русская” (0.5 л)</span><span class="font-semibold">15 000 ₩</span></div>
-    </div>
-
-    <!-- Раздел: К пиву -->
-    <h3 class="text-2xl font-bold text-[#FBEEDF] mb-4 mt-12" data-i18n="categoryBeerSnacks">К пиву</h3>
-    <div class="grid gap-2">
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="beerSnack_1">Сыр «Косичка»</span><span class="font-semibold">10 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="beerSnack_2">Бастурма</span><span class="font-semibold">7 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="beerSnack_3">Орешки</span><span class="font-semibold">3 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="beerSnack_4">Чипсы</span><span class="font-semibold">4 000 ₩</span></div>
-      <div class="flex justify-between border-b border-white/20 pb-2"><span data-i18n="beerSnack_5">Сухарики</span><span class="font-semibold">2 500 ₩</span></div>
     </div>
   </div>
 </section>
-
-
 
 
 <!-- Контакты -->
-<section id="contacts" class="py-16 bg-[#DDF1FC]/10 backdrop-blur-sm">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold text-[#FBEEDF] mb-6 uppercase tracking-wide" data-i18n="contacts">Контакты</h2>
-    
-    <p class="mb-4 text-gray-300" data-i18n="address">АДРЕС: 울산 동구 꽃바위로 172</p>
-    
-    <p class="mb-4 text-gray-300">
-      <span data-i18n="phoneLabel">Телефон:</span> 
-      <a href="tel:01076410304" class="text-[#DDB3BE] no-underline hover:underline transition duration-150">010 - 7641 - 0304</a>
+<section id="contacts" class="py-16 bg-[#DDF1FC]/10">
+  <div class="container mx-auto px-4 max-w-3xl text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold text-[#FBEEDF] mb-8 uppercase tracking-wide" data-i18n="contacts">Контакты</h2>
+
+    <p class="text-gray-300 text-lg sm:text-xl mb-4" data-i18n="address">
+      📍 <strong>АДРЕС:</strong> 울산 동구 꽃바위로 172
     </p>
-    
-    <div class="flex justify-center gap-4 mb-4 flex-wrap">
-      <a href="https://t.me/natali_cafeLamp" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded-full shadow-md hover:opacity-90" data-i18n="telegram">Telegram</a>
-      <a href="tel:01076410304" class="bg-green-600 text-white px-6 py-2 rounded-full shadow-md hover:opacity-90" data-i18n="call">Позвонить</a>
+
+    <p class="text-gray-300 text-lg sm:text-xl mb-6">
+      <span data-i18n="phoneLabel">Телефон:</span> 
+      <a href="tel:01076410304" class="text-[#DDB3BE] font-semibold hover:underline transition duration-150">010 - 7641 - 0304</a>
+    </p>
+
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="https://t.me/natali_cafeLamp" target="_blank" class="flex items-center gap-2 bg-[#229ED9] text-white px-6 py-2 rounded-full shadow-md hover:scale-105 transition duration-200" data-i18n="telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M9.954 15.936l-.396 3.957c.568 0 .815-.244 1.118-.538l2.67-2.516 5.534 4.046c1.014.561 1.728.266 1.99-.94l3.612-16.962c.319-1.484-.535-2.065-1.52-1.72L.998 9.468c-1.466.56-1.451 1.364-.25 1.733l5.566 1.74 12.906-8.152c.609-.37 1.163-.166.707.203L9.954 15.936z"/></svg>
+        Telegram
+      </a>
+      <a href="tel:01076410304" class="bg-green-600 text-white px-6 py-2 rounded-full shadow-md hover:scale-105 transition duration-200" data-i18n="call">
+        Позвонить
+      </a>
     </div>
   </div>
 </section>
+
+
+
 
 <!-- Карта -->
 <section id="map" class="py-12 bg-black/20 backdrop-blur-sm">
