@@ -58,7 +58,7 @@
     "mainDishPrice_4": "₩10000",
 
 
-    "categorySecondDish": "Main Courses",
+    "categorySecondDish": "Main Courses / 메인 코스",
     "secondDishTitle_1": "French-style Pork / 프랑스식 돼지고기",
     "secondDishDesc_1": "Oven-baked pieces of pork topped with onions, tomatoes, and grated cheese. Served with your choice of homemade mashed potatoes or potato wedges.\n오븐에 구운 양파, 토마토, 치즈, 마요네즈를 얹은 돼지고기. 매쉬드 포테이토 또는 감자 웨지가 선택 가능.",
     "secondDishPrice_1": "₩14000",
@@ -175,7 +175,7 @@
 
     "categoryDrinks": "Drinks / 음료",
 
-    "nonAlcoholic": "Non-Alcoholic Drinks / 무알콜 음료",
+    "nonAlcoholic": "Non-Alcoholic Drinks / 무알콜",
     "drinkStill": "Still Drinks / 탄산 없는 음료",
     "drink_1": "Pepsi",
     "drink_2": "Sprite",
